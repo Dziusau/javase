@@ -22,45 +22,49 @@ public class Steam {
             i++;
 
         play[i] = new Game();
-            play[i].name = "";
-            play[i].cost = 10;
-            play[i].ageLimit = 8;
+            play[i].name = "GTA 5";
+            play[i].cost = 25;
+            play[i].ageLimit = 18;
             i++;
 
         play[i] = new Game();
-            play[i].name = "Dota 2";
-            play[i].cost = 10;
-            play[i].ageLimit = 8;
+            play[i].name = "Metro";
+            play[i].cost = 9;
+            play[i].ageLimit = 16;
             i++;
 
         play[i] = new Game();
-            play[i].name = "Dota 2";
-            play[i].cost = 10;
-            play[i].ageLimit = 8;
+            play[i].name = "World of tanks";
+            play[i].cost = 0;
+            play[i].ageLimit = 6;
             i++;
 
         play[i] = new Game();
-            play[i].name = "Dota 2";
-            play[i].cost = 10;
-            play[i].ageLimit = 8;
+            play[i].name = "Street Fighter";
+            play[i].cost = 7;
+            play[i].ageLimit = 14;
             i++;
 
         play[i] = new Game();
-            play[i].name = "Dota 2";
-            play[i].cost = 10;
-            play[i].ageLimit = 8;
+            play[i].name = "Doki Doki Literature Club" ;
+            play[i].cost = 0;
+            play[i].ageLimit = 16;
             i++;
 
         play[i] = new Game();
-            play[i].name = "Dota 2";
-            play[i].cost = 10;
-            play[i].ageLimit = 8;
+            play[i].name = "FallOut 4";
+            play[i].cost = 15;
+            play[i].ageLimit = 14;
             i++;
 
         play[i] = new Game();
-            play[i].name = "Dota 2";
-            play[i].cost = 10;
+            play[i].name = "Civilization 5";
+            play[i].cost = 15;
             play[i].ageLimit = 8;
-
+    }
+    void Sell (){
+        Gamer pleyer = new Gamer();
+        Game();
+        pleyer.cash = pleyer.cash - ;
     }
 }
