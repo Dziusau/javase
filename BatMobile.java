@@ -2,15 +2,13 @@ class BatMobile extends Car{
     int countBullets;
     int speedShooting;
     double currentTimeWay;
+    int damageOnePatron;
 
-    public BatMobile(int maxSpeed) {
-        super(maxSpeed);
-    }
-
-    public BatMobile(int maxSpeed, int countBullets, int speedShooting) {
+    public BatMobile(int maxSpeed, int countBullets, int speedShooting, int damageOnePatron) {
         super(maxSpeed);
         this.countBullets = countBullets;
         this.speedShooting = speedShooting;
+        this.damageOnePatron = damageOnePatron;
     }
 
     @Override
@@ -37,14 +35,17 @@ class BatMobile extends Car{
 
     public void shoot(){
         double timeShooting = this.countBullets / this.speedShooting;
+        double damage;
         try {
             if (timeShooting < this.currentTimeWay){
-                throw new Exception("Your BatMobile can even shoot, but there is lack of bullets, and you couldn't drive shooting the whole way.\nYou drove and shot for : " + timeShooting);
+                damage = timeShooting * this.speedShooting * this.damageOnePatron;
+                throw new Exception("Your BatMobile can even shoot, but there is lack of bullets, and you couldn't drive shooting the whole way.\nYou drove and shot for : " + timeShooting + "\nYou have done " + damage + "hp damage;");
             } else {
-                System.out.println("Your BatMobile can even shoot!");
+                damage = this.damageOnePatron * this.speedShooting * this.currentTimeWay;
+                System.out.println("\nYour BatMobile can even shoot!" + "You have done " + damage + "hp damage");
             }
         } catch (Exception ex){
-
+            System.out.println(ex.getMessage());
         }
     }
 }

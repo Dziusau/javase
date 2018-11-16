@@ -5,11 +5,11 @@ public class CarOwner {
         machine.drive(50);
         machine.stop();
 
-        BatMobile supermachine = new BatMobile(95  );
+        BatMobile supermachine = new BatMobile(95, 300, 45, 10);
         supermachine.start();
         supermachine.fly(30);
-        supermachine.stop();
         supermachine.drive(50);
         supermachine.shoot();
+        supermachine.stop();
     }
 }
